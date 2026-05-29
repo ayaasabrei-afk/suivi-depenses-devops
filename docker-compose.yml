@@ -6,7 +6,6 @@ services:
     container_name: suivi_depenses_app
     ports:
       - "5000:5000"
-    volumes:
-      - .:/app
     environment:
       - FLASK_ENV=development
+      - FLASK_APP=app.py
